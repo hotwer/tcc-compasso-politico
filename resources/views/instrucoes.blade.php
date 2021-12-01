@@ -18,7 +18,7 @@
 
 <h1>8values</h1>
 <hr>
-<h2 style="text-align:center;">Instructions</h2>
+<h2 style="text-align:center;">Instruções</h2>
 <p class="question">Uma série de afirmações será apresentada. Para cada uma, clique no botão correspondente à sua opinião.</p>
 <button class="button" onclick="location.href='/questionario';">Entendi!</button> <br>
 <button class="button disagree" onclick="location.href='/';">Espera, deixa pra lá!</button> <br>

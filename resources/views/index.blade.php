@@ -162,6 +162,10 @@
         eightvalues@gmail.com com sua pontuação, ideologia atribuída e ideologia preferida, e vamos tentar ajustar o sistema. Obrigado!</h2>
     <p>¯\_(ツ)_/¯<br/> Se você tem alguma sugestão ou crítica construtiva, sinta-se à vontade para enviar um e-mail para <a href="mailto:eightvalues@gmail.com">eightvalues@gmail.com</a></p>
     <br>
+    <br>
+    <p>
+        <small>Se você tem alguma dúvida sobre esse compasso político você pode entrar em contato diretamente comigo pelo e-mail <a href="mailto:bernardo.k.araujo@gmail.com">bernardo.k.araujo@gmail.com</a></small>
+    </p>
     <!-- Website visit statistics - no personal information is collected! -->
     <script type="text/javascript">
         var sc_project = 11325211;
