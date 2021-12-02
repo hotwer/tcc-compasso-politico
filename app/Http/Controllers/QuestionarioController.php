@@ -8,14 +8,20 @@ class QuestionarioController extends Controller
 {
     
     public function instrucoes() {
-        return view('instrucoes');
+        return view('instrucoes', [
+            'title' => 'Instruções - 8values - TCC Univeritas - Bernardo Araujo'
+        ]);
     }
 
     public function questionario() {
-        return view('questionario');
+        return view('questionario', [
+            'title' => 'Questionário - 8values - TCC Univeritas - Bernardo Araujo'
+        ]);
     }
 
     public function resultados() {
-        return view('resultados');
+        return view('resultados', [
+            'title' => 'Resultados - 8values - TCC Univeritas - Bernardo Araujo'
+        ]);
     }
 }

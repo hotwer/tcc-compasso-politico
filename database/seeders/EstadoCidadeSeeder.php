@@ -20,28 +20,42 @@ class EstadoCidadeSeeder extends Seeder
     }
 
     private function insertEstados() {
-        if (Estado::exists()) {
+        if (!Estado::exists()) {
+            $estados = $this->readCSV('estados', fieldMap: [
+                'cod' => 'id',
+            ]);
+
+            Estado::insert($estados);
+
             return; // table already seeded
         }
 
-        $estados = $this->readCSV('estados', fieldMap: [
-            'cod' => 'id',
-        ]);
-
-        Estado::insert($estados);
+        if (!Estado::where('sigla', 'EX')->first()) {
+            Estado::insert([
+                'id' => 0,
+                'nome' => 'Estrangeiro',
+                'sigla' => 'EX' 
+            ]);
+        }
     }
 
     private function insertCidades() {
-        if (Cidade::exists()) {
-            return; // table already seeded
+        if (!Cidade::exists()) {
+            $cidades = $this->readCSV('municipios', fieldMap: [
+                'cod' => 'id',
+                'cod_uf' => 'estado_id'
+            ]);
+
+            Cidade::insert($cidades);
         }
 
-        $cidades = $this->readCSV('municipios', fieldMap: [
-            'cod' => 'id',
-            'cod_uf' => 'estado_id'
-        ]);
-
-        Cidade::insert($cidades);
+        if (!Cidade::where('estado_id', '0')->first()) {
+            Cidade::insert([
+                'id' => 0,
+                'nome' => 'Estrangeiro',
+                'estado_id' => 0
+            ]);
+        }
     }
 
     private function readCSV($fileName, $fieldMap = [], $hasHeaders = true) {

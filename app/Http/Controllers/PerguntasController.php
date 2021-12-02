@@ -16,6 +16,7 @@ class PerguntasController extends Controller
         
         Pergunta::with("opcao")->each(function (Pergunta $pergunta) use (&$json) {
             array_push($json, [
+                "id" => $pergunta->id,
                 "question" => $pergunta->texto,
                 "effect" => [
                     "econ" => $pergunta->opcao->peso_econ,
