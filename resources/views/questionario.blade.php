@@ -74,7 +74,7 @@
             govt_array[qn] = mult * questions[qn].effect.govt
             scty_array[qn] = mult * questions[qn].effect.scty
 
-            comment = document.getElementById('comment');
+            comment = document.getElementById('comment').value;
             
             axios
                 .post(`/api/resposta/save/${questions[qn].id}`, {
