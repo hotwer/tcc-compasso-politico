@@ -10,47 +10,47 @@
 
     <h2>Eixo econômico: <span class="weight-300" id="economic-label"></span></h2>
     <div class="axis">
-        <img id="img-equality" src="value_images/equality.svg" height="128pt" />
+        <img id="img-equality" src="value_images/equality_pt-br.svg" height="128pt" />
         <div class="bar equality" id="bar-equality">
             <div class="text-wrapper" id="equality"></div>
         </div>
         <div class="bar wealth" id="bar-wealth">
             <div class="text-wrapper" id="wealth"></div>
         </div>
-        <img id="img-wealth" src="value_images/markets.svg" height="128pt" />
+        <img id="img-wealth" src="value_images/markets_pt-br.svg" height="128pt" />
     </div>
     <h2>Eixo diplomático: <span class="weight-300" id="diplomatic-label"></span></h2>
     <div class="axis">
-        <img id="img-might" src="value_images/nation.svg" height="128pt" />
+        <img id="img-might" src="value_images/nation_pt-br.svg" height="128pt" />
         <div class="bar might" id="bar-might">
             <div class="text-wrapper" id="might"></div>
         </div>
         <div class="bar peace" id="bar-peace">
             <div class="text-wrapper" id="peace"></div>
         </div>
-        <img id="img-peace" src="value_images/globe.svg" height="128pt" />
+        <img id="img-peace" src="value_images/globe_pt-br.svg" height="128pt" />
     </div>
     <h2>Eixo civil: <span class="weight-300" id="state-label"></span></h2>
     <div class="axis">
-        <img id="img-liberty" src="value_images/liberty.svg" height="128pt" />
+        <img id="img-liberty" src="value_images/liberty_pt-br.svg" height="128pt" />
         <div class="bar liberty" id="bar-liberty">
             <div class="text-wrapper" id="liberty"></div>
         </div>
         <div class="bar authority" id="bar-authority">
             <div class="text-wrapper" id="authority"></div>
         </div>
-        <img id="img-authority" src="value_images/authority.svg" height="128pt" />
+        <img id="img-authority" src="value_images/authority_pt-br.svg" height="128pt" />
     </div>
     <h2>Eixo social: <span class="weight-300" id="society-label"></span></h2>
     <div class="axis">
-        <img id="img-tradition" src="value_images/tradition.svg" height="128pt" />
+        <img id="img-tradition" src="value_images/tradition_pt-br.svg" height="128pt" />
         <div class="bar tradition" id="bar-tradition">
             <div class="text-wrapper" id="tradition"></div>
         </div>
         <div class="bar progress" id="bar-progress">
             <div class="text-wrapper" id="progress"></div>
         </div>
-        <img id="img-progress" src="value_images/progress.svg" height="128pt" />
+        <img id="img-progress" src="value_images/progress_pt-br.svg" height="128pt" />
     </div>
 
     <h2>Perfil mais próximo: <span class="weight-300" id="ideology-label"></span></h2>

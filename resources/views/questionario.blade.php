@@ -5,15 +5,22 @@
 <body>
     <h1>8values</h1>
     <hr>
-    <h2 style="text-align:center;" id="question-number">Carregando...</h2>
+    <div class="header-container">
+        <h2 style="text-align:center;" id="question-number">Carregando...</h2>
+        <button class="small_button" onclick="prev_question()" id="back_button">Voltar</button>
+        <button class="small_button_off" id="back_button_off">Voltar</button>
+    </div>
     <p class="question" id="question-text"></p>
     <button class="button stronglyAgree" onclick="next_question( 1.0)">Concordo extremamente</button> <br>
     <button class="button agree" onclick="next_question( 0.5)">Concordo</button> <br>
-    <button class="button neutral" onclick="next_question( 0.0)">Neutral/Incerto</button> <br>
+    <button class="button neutral" onclick="next_question( 0.0)">Neutro/Incerto</button> <br>
     <button class="button disagree" onclick="next_question(-0.5)">Discordo</button> <br>
     <button class="button stronglyDisagree" onclick="next_question(-1.0)">Discordo extremamente</button> <br>
-    <button class="small_button" onclick="prev_question()" id="back_button">Voltar</button>
-    <button class="small_button_off" id="back_button_off">Voltar</button><br>
+    
+    <h3 style="text-align:center;">Quer complementar a sua resposta? <br /> <small style="text-align:center; font-size: 12pt">Preencha antes de selecionar a sua opção</small></h3>
+    
+    <textarea name="" id="comment" cols="30" rows="10"></textarea>
+    
 
     <!-- JavaScript for the test itself -->
     <script>
@@ -51,6 +58,7 @@
         function init_question() {
             document.getElementById("question-text").innerHTML = questions[qn].question;
             document.getElementById("question-number").innerHTML = "Pergunta " + (qn + 1) + " de " + (questions.length);
+            document.getElementById("comment").value = "";
             if (qn == 0) {
                 document.getElementById("back_button").style.display = 'none';
                 document.getElementById("back_button_off").style.display = 'block';
@@ -66,6 +74,7 @@
             govt_array[qn] = mult * questions[qn].effect.govt
             scty_array[qn] = mult * questions[qn].effect.scty
 
+            comment = document.getElementById('comment');
             
             axios
                 .post(`/api/resposta/save/${questions[qn].id}`, {
@@ -73,7 +82,8 @@
                     "ip": identificacao.ip, 
                     "estado_id": identificacao.estadoId,
                     "cidade_id": identificacao.cidadeId,
-                    "multiplicador": mult
+                    "multiplicador": mult,
+                    "comentario": comment,
                 })
                 .then(function(response) { console.log(["save", response]); });
 

@@ -3,7 +3,6 @@
 </head>
 
 <body>
-    @include('partials.github-corner')
     <h1>8values</h1>
     <hr>
     <div class="center">
@@ -24,7 +23,17 @@
     <button class="button" onclick="location.href='/instrucoes';" style="font-size:36pt;">Clique aqui para
         iniciar!</button>
     <br>
+    
     <hr>
+    <h2>Importante!</h2>
+    <p>Esse é um projeto de pesquisa desenvolvido por <u>Bernardo Kauer Comba de Araujo</u>, com o objetivo 
+       de realizar coleta de informações para trabalho de pesquisa sem fins comerciais.
+       <br /> <br />
+       Parte desse projeto é baseado no teste conhecido como <i>8values</i>. Foi modificado e traduzido para aderir aos formatos da pesquisa.
+       <br /> <br />
+       Caso você tenha interesse em conhecer o projeto original, você pode encontra-lo no repositório GitHub
+       <a href="https://github.com/8values/8values.github.io">https://github.com/8values/8values.github.io</a>
+    </p>
     <h2>O que é o 8values?</h2>
     <p>O 8values é, em essência, um teste de coordenadas políticas que tenta indicar porcentagens
         para oito diferentes valores ideológicos. Você será apresentado a uma afirmação e, então,
@@ -37,7 +46,7 @@
         Existem <b><u><span id="numOfQuestions"></span></u></b> questões no teste.
     </p>
 
-    <h2><a id="anchor">O que são os oito valores?</a></h2>
+    <h2><a id="anchor">O que e quais são os oito valores?</a></h2>
     <p>Existem quatro eixos ideológicos - Econômico, Diplomático, Civil e Social - e cada um tem dois valores opostos
         atribuídos a eles. Estes são:</p>
     <div class="explanation_bg">
@@ -130,21 +139,17 @@
         </div>
         <br />
     </div>
-
+    <br />
     <h2 style="margin-top: 17pt;">O que significa "perfil mais próximo" ao final dos resultados?</h2>
     <p>Adicionalmente à associação dos oito valores, o questionário também tenta calcular o seu perfil ideológico.
         Isto é um trabalho em andamento e muito menos preciso que os valores e eixos ideológicos, então não o leve
-        muito a sério. Se você discorda com a ideologia que lhe foi atribuída, nos mande um email no endereço
-        eightvalues@gmail.com com sua pontuação, ideologia atribuída e ideologia preferida, e vamos tentar ajustar o
-        sistema. Obrigado!</h2>
-    <p>¯\_(ツ)_/¯<br /> Se você tem alguma sugestão ou crítica construtiva, sinta-se à vontade para enviar um e-mail para
-        <a href="mailto:eightvalues@gmail.com">eightvalues@gmail.com</a>
-    </p>
+        muito a sério. Obrigado!</h2>
     <br>
     <br>
     <p>
         <small>Se você tem alguma dúvida sobre esse compasso político você pode entrar em contato diretamente comigo
-            pelo e-mail <a href="mailto:bernardo.k.araujo@gmail.com">bernardo.k.araujo@gmail.com</a></small>
+            pelo e-mail <a href="mailto:bernardo.k.araujo@gmail.com">bernardo.k.araujo@gmail.com</a>
+        </small>
     </p>
 
     <!-- This is the script for the page itself -->
