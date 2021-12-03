@@ -56,28 +56,13 @@
     <h2>Perfil mais próximo: <span class="weight-300" id="ideology-label"></span></h2>
     <p>O cálculo do perfil ideológico é um trabalho em andamento, e é muito menos exato que os valores e eixos
         ideológicos acima.</p>
-    <p>Você pode enviar esses resultados copiando e colando a URL no topo da página ou usando a imagem abaixo. Acha que
-        a ideologia associada está errada? Quer nos ajudar a calibrar os testes? Envie os resultados juntamente com sua
-        ideologia política para nós no endereço eightvalues@gmail.com, ou nos mande quaisquer comentários, perguntas ou
-        críticas.</p>
+    <p>Você pode enviar esses resultados copiando e colando a URL no topo da página ou usando a imagem abaixo.</p>
+    <br />
+    <p>Se você tem gostaria de ver o código fonte desse porjeto você pode encontra-lo no repositório do GitHub 
+        <a href="https://github.com/hotwer/tcc-compasso-politico">https://github.com/hotwer/tcc-compasso-politico</a></p>
     <hr />
     <img src="" id="banner">
     <button class="button" onclick="location.href='/';">Voltar</button> <br>
-    <!-- Website visit statistics - no personal information is collected! -->
-    <script type="text/javascript">
-        var sc_project = 11325211;
-        var sc_invisible = 1;
-        var sc_security = "fd9f0659";
-        var scJsHost = (("https:" == document.location.protocol) ?
-            "https://secure." : "http://www.");
-        document.write("<sc" + "ript type='text/javascript' src='" +
-            scJsHost +
-            "statcounter.com/counter/counter.js'></" + "script>");
-    </script>
-    <noscript>
-        <div class="statcounter"><a title="web stats" href="http://statcounter.com/" target="_blank"><img
-                    class="statcounter" src="//c.statcounter.com/11325211/0/fd9f0659/1/" alt="web
-stats"></a></div>
     </noscript>
     <script>
         let ideology, version = '{{ 'Bernardo A. - Univeritas' }}';
@@ -278,8 +263,8 @@ stats"></a></div>
                 ctx.fillText(progress + "%", 670, 597.5)
             }
 
-            ctx.font = "300 30px Montserrat"
-            ctx.fillText("8values.github.io", 780, 60)
+            ctx.font = "300 25px Montserrat"
+            // ctx.fillText("https://github.com/hotwer/tcc-compasso-politico", 780, 60)
             ctx.fillText(version, 780, 90)
             ctx.textAlign = "center"
             ctx.fillText("Eixo econômico: " + document.getElementById("economic-label").innerHTML, 400, 175)
