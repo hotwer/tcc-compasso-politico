@@ -1,4 +1,4 @@
-## Compasso Polítoo
+## Compasso Político
 
 <p>Esse é um projeto de pesquisa desenvolvido por <u>Bernardo Kauer Comba de Araujo</u>, com o objetivo 
     de realizar coleta de informações para trabalho de pesquisa sem fins comerciais.
