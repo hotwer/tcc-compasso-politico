@@ -11,6 +11,7 @@ class RespostasController extends Controller
     public function save(Request $request, $perguntaId) {
         $hash = $request->input('hash');
         $multiplicador = $request->input('multiplicador');
+        $comentario = $request->input('comentario');
 
         $identificador = Identificador::where('hash', $hash)->first();
 
@@ -40,6 +41,7 @@ class RespostasController extends Controller
             $resposta->pergunta_id = $perguntaId;
         }
 
+        $resposta->comentario = $comentario;
         $resposta->multiplicador = $multiplicador;
         $resposta->save();
 
