@@ -3,47 +3,20 @@
 </head>
 
 <body>
-    <style>
-        #estado-cidade {
-            margin: 4pt auto 20pt;
-            
-            width: 70%;
-            min-width: 500pt;
-            
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-        }
-
-        #estado-cidade select {
-            border-radius: 16pt;
-            padding: 4pt;
-            width: 49%;
-            color: #333333;
-            font-family: 'Montserrat', sans-serif;
-            font-weight: normal;
-            font-size: 36pt;
-            margin: 0 0.5% 
-        }
-
-        .button.disabled {
-            background-color: #ddd;
-            color: #888;
-            border: 2px solid #888;
-            cursor: not-allowed;
-            margin: -4px auto;
-        }
-
-    </style>
-
     <h1>8values</h1>
     <hr>
     <h2 style="text-align:center;">Instruções</h2>
     <p class="question">
-        Uma série de afirmações será apresentada. Para cada uma, clique no botão correspondente à
-        sua opinião. <br /> <br />
-        Por favor, selecione de qual estado/cidade você está realizando o questionário.
+        <span>
+            Uma série de afirmações será apresentada. Para cada uma, clique no botão correspondente à
+            sua opinião.
+        </span>
+        <br><br>
+        <small>Por favor, selecione de qual estado/cidade você está realizando o questionário.  
+            <br><br> 
+            Essas informações serão utilizadas apenas para avaliações estatisticas de forma anonima e agregada, 
+            nenhuma informação será usada para identificação pessoal.
+        </small>
     </p>
     <div id="estado-cidade"></div>
     <button id="proceed-button" class="button disabled">Entendi!</button> <br>

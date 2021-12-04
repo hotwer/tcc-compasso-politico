@@ -28,4 +28,5 @@ Route::get("/ideologias", [IdeologiasController::class, 'get']);
 Route::get("/estados", [EstadosCidadesController::class, 'estados']);
 Route::get("/estado/{estadoId}/cidades", [EstadosCidadesController::class, 'cidades']);
 Route::post("/resposta/save/{perguntaId}", [RespostasController::class, 'save']);
+Route::post("/avaliar/{avaliacaoItemNumber}", [RespostasController::class, 'avaliar']);
 

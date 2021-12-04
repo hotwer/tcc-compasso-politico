@@ -19,6 +19,13 @@ class QuestionarioController extends Controller
         ]);
     }
 
+    public function avaliacao() {
+        return view('avaliacao', [
+            'title' => 'Avaliação - 8values - TCC Univeritas - Bernardo Araujo'
+        ]);
+    }
+
+
     public function resultados() {
         return view('resultados', [
             'title' => 'Resultados - 8values - TCC Univeritas - Bernardo Araujo'

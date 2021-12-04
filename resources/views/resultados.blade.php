@@ -3,6 +3,10 @@
 </head>
 
 <body>
+    <style>
+        
+    </style>
+
     <h1>8values</h1>
     <hr>
 
@@ -52,20 +56,64 @@
         </div>
         <img id="img-progress" src="value_images/progress_pt-br.svg" height="128pt" />
     </div>
-
     <h2>Perfil mais próximo: <span class="weight-300" id="ideology-label"></span></h2>
     <p>O cálculo do perfil ideológico é um trabalho em andamento, e é muito menos exato que os valores e eixos
         ideológicos acima.</p>
+    <br><br>
+    <div class="avaliacao-concordancia">
+        <h4>Você concorda com o resultado calculado para o seu perfil?</h4>
+        <label class="avaliacao-concordancia-option">
+            Discordo Fortemente <br />
+            <input type="radio" name="avaliacao-concordancia" value="-2">
+        </label><label class="avaliacao-concordancia-option">
+            Discordo <br />
+            <input type="radio" name="avaliacao-concordancia" value="-1">
+        </label><label class="avaliacao-concordancia-option">
+            Neutro/Incerto <br />
+            <input type="radio" name="avaliacao-concordancia" value="0">
+        </label><label class="avaliacao-concordancia-option">
+            Concordo <br />
+            <input type="radio" name="avaliacao-concordancia" value="1">
+        </label><label class="avaliacao-concordancia-option">
+            Concordo Fortemente <br />
+            <input type="radio" name="avaliacao-concordancia" value="2">
+        </label>
+    </div>
+    <br><br><br /> <br />
     <p>Você pode enviar esses resultados copiando e colando a URL no topo da página ou usando a imagem abaixo.</p>
     <br />
-    <p>Se você tem gostaria de ver o código fonte desse porjeto você pode encontra-lo no repositório do GitHub 
+    <p>Se você tem gostaria de ver o código fonte desse projeto você pode encontra-lo no repositório do GitHub 
         <a href="https://github.com/hotwer/tcc-compasso-politico">https://github.com/hotwer/tcc-compasso-politico</a></p>
     <hr />
     <img src="" id="banner">
     <button class="button" onclick="location.href='/';">Voltar</button> <br>
     </noscript>
     <script>
+        const identificacao =  getIdentificacao();
+
         let ideology, version = '{{ 'Bernardo A. - Univeritas' }}';
+
+        bindEvents();
+
+        function bindEvents() {
+            for (let radioLabel of document.getElementsByClassName('avaliacao-concordancia-option')) {
+                let radio = radioLabel.lastElementChild;
+
+                radio.addEventListener('change', onAvaliarChange);
+            }
+
+            function onAvaliarChange() {
+                axios.post('/api/avaliar/0', {
+                    "hash": identificacao.hash,
+                    "ip": identificacao.ip, 
+                    "estado_id": identificacao.estadoId,
+                    "cidade_id": identificacao.cidadeId,
+                    'avaliacao': this.value
+                });
+
+                alert('Muito obrigado por participar!!!');
+            }
+        }
 
         function getQueryVariable(variable) {
             var query = window.location.search.substring(1)

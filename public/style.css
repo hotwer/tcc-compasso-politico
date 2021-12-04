@@ -55,6 +55,8 @@ p.question {
     border-radius: 16pt;
     font-size: 36pt;
     display: flex;
+    flex-direction: column;
+    flex-grow: 1;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -90,6 +92,15 @@ h3 {
     line-height: 25pt;
     margin-top: 7pt;
     margin-bottom: 7pt;
+}
+
+h4 {
+    color: #333333;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20pt;
+    line-height: 20pt;
+    margin-top: 5pt;
+    margin-bottom: 5pt;
 }
 
 li {
@@ -384,4 +395,43 @@ span.weight-300 {
     border-radius: 8pt;
     padding: 8pt;
     font-size: 18pt;
+}
+
+#estado-cidade {
+    margin: 4pt auto 20pt;
+    width: 70%;
+    min-width: 500pt;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#estado-cidade select {
+    border-radius: 16pt;
+    padding: 4pt;
+    width: 49%;
+    color: #333333;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: normal;
+    font-size: 36pt;
+    margin: 0 0.5%
+}
+
+.button.disabled {
+    background-color: #ddd;
+    color: #888;
+    border: 2px solid #888;
+    cursor: not-allowed;
+    margin: -4px auto;
+}
+
+.avaliacao-concordancia-option {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: normal;
+    font-size: 14pt;
+    float: left;
+    width: 20%;
+    display: block;
+    text-align: center;
 }

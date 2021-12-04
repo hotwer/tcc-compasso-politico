@@ -20,4 +20,5 @@ Route::get('/', IndexController::class);
 
 Route::get('/instrucoes', [QuestionarioController::class, 'instrucoes']);
 Route::get('/questionario', [QuestionarioController::class, 'questionario']);
+Route::get('/avaliacao', [QuestionarioController::class, 'avaliacao']);
 Route::get('/resultados', [QuestionarioController::class, 'resultados']);

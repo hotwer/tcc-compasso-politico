@@ -113,7 +113,7 @@
             let final_dipl = dipl_array.reduce((a, b) => a + b, 0)
             let final_govt = govt_array.reduce((a, b) => a + b, 0)
             let final_scty = scty_array.reduce((a, b) => a + b, 0)
-            location.href = `/resultados` +
+            location.href = `/avaliacao` +
                 `?e=${calc_score(final_econ,max_econ)}` +
                 `&d=${calc_score(final_dipl,max_dipl)}` +
                 `&g=${calc_score(final_govt,max_govt)}` +
