@@ -23,8 +23,6 @@
     <button class="button" onclick="location.href='/instrucoes';" style="font-size:36pt;">Clique aqui para
         iniciar!</button>
     <br>
-
-    https://www.linkedin.com/in/bernardo-araujo-7419a610a/
     
     <hr>
     <h2>Importante!</h2>
