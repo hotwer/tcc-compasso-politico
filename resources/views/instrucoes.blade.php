@@ -11,7 +11,12 @@
             Uma série de afirmações será apresentada. Para cada uma, clique no botão correspondente à
             sua opinião.
         </span>
-        <br><br>
+        <br>
+        <small>
+            Em cada uma das perguntas existe uma caixa de <b>comentário</b> caso você tenha vontade de complementar a sua opinião
+            referente aquela pergunta/afirmação. Lembre-se de preenche-la <b>ANTES</b> de selecionar sua opção.
+        </small>
+        <br />
         <small>Por favor, selecione de qual estado/cidade você está realizando o questionário.  
             <br><br> 
             Essas informações serão utilizadas apenas para avaliações estatisticas de forma anonima e agregada, 

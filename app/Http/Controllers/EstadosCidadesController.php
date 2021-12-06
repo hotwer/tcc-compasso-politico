@@ -12,7 +12,8 @@ class EstadosCidadesController extends Controller
 
     public function estados() {
         return response(
-            Estado::orderBy('nome', 'asc')
+            Estado::where('id', '!=', '0')
+                ->orderBy('nome', 'asc')
                 ->get()
         );
     }

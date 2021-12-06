@@ -23,10 +23,12 @@
     <button class="button" onclick="location.href='/instrucoes';" style="font-size:36pt;">Clique aqui para
         iniciar!</button>
     <br>
+
+    https://www.linkedin.com/in/bernardo-araujo-7419a610a/
     
     <hr>
     <h2>Importante!</h2>
-    <p>Esse é um projeto de pesquisa desenvolvido por <u>Bernardo Kauer Comba de Araujo</u>, com o objetivo 
+    <p>Esse é um projeto de pesquisa de TCC desenvolvido por <u><a href="https://www.linkedin.com/in/bernardo-araujo-7419a610a/">Bernardo Kauer Comba de Araujo</a></u> pela Universidade Univeritas do Rio de Janeiro, sob a orientação do professor Yuri Lima, com o objetivo 
        de realizar coleta de informações para trabalho de pesquisa sem fins comerciais.
        <br /> <br />
        Parte desse projeto é baseado no teste conhecido como <i>8values</i>. Foi modificado e traduzido para aderir aos formatos da pesquisa.
@@ -74,9 +76,9 @@
         </div>
         <div class="spacer">
             <div class="explanation_blurb_left">
-                <p class="value"><b style="color:#f57c00;">NACIONALISMO</b></p>
+                <p class="value"><b style="color:#f57c00;">NAÇÃO</b></p>
                 <p class="blurb-text">
-                    Aqueles com uma pontuação maior em Nacionalismo são patriotas. Estes geralmente acreditam numa
+                    Aqueles com uma pontuação maior em Nação são patriotas e nacionalistas. Estes geralmente acreditam numa
                     política externa agressiva, valorizando as forças armadas, a soberania nacional, e se preciso, o uso
                     da força militar.
                 </p>
@@ -86,9 +88,9 @@
                 <img class="arrow" src="double_arrow.svg">
             </div>
             <div class="explanation_blurb_right">
-                <p class="value"><b style="color:#0288d1;">GLOBALIZAÇÃO</b></p>
+                <p class="value"><b style="color:#0288d1;">MUNDO</b></p>
                 <p class="blurb-text">
-                    Aqueles com uma pontuação maior em Globalização são cosmopolitas. Estes geralmente acreditam numa
+                    Aqueles com uma pontuação maior em Mundo são cosmopolitas e globalistas. Estes geralmente acreditam numa
                     política externa pacífica, enfatizando diplomacia, cooperação, integração, e no geral, uma unidade
                     global de interesse mútuo.
                 </p>
