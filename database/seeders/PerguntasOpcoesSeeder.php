@@ -17,42 +17,58 @@ class PerguntasOpcoesSeeder extends Seeder
     {
         $perguntas = $this->readPerguntasJson();
 
-        $perguntasInsert = [];
-        $perguntasOpcoes = [];
+        foreach ($perguntas as $_pergunta) {
+            
+            $pergunta = Pergunta::find($_pergunta["id"]);
+            
+            if ($_pergunta) {
+                $pergunta->texto = $_pergunta["question"];
 
-        foreach ($perguntas as $pergunta) {
-            array_push($perguntasOpcoes, [
-                "texto" => $pergunta["question"],
-                "opcoes" => [
-                    "peso_econ" => $pergunta["effect"]["econ"],
-                    "peso_dipl" => $pergunta["effect"]["dipl"],
-                    "peso_govt" => $pergunta["effect"]["govt"],
-                    "peso_scty" => $pergunta["effect"]["scty"]
-                ],
-            ]);
+                $pergunta->save();
 
-            array_push($perguntasInsert, ["texto" => $pergunta["question"]]);
+                $opcao = Opcao::where('pergunta_id', $_pergunta["id"])->first();
+
+                $opcao->peso_econ = $_pergunta["effect"]["econ"];
+                $opcao->peso_dipl = $_pergunta["effect"]["dipl"];
+                $opcao->peso_govt = $_pergunta["effect"]["govt"];
+                $opcao->peso_scty = $_pergunta["effect"]["scty"];
+
+                $opcao->save();
+            } else {
+                $pergunta = new Pergunta();
+
+                $pergunta->id = $_pergunta["id"];
+                $pergunta->texto = $_pergunta["question"];
+
+                $pergunta->save();
+
+                $opcao = new Opcao();
+
+                $opcao->pergunta_id = $pergunta->id;
+                $opcao->peso_econ = $_pergunta["effect"]["econ"];
+                $opcao->peso_dipl = $_pergunta["effect"]["dipl"];
+                $opcao->peso_govt = $_pergunta["effect"]["govt"];
+                $opcao->peso_scty = $_pergunta["effect"]["scty"];
+
+                $opcao->save();
+            }
+
+            // array_push($perguntasOpcoes, [
+            //     "id" => $pergunta["id"],
+            //     "texto" => $pergunta["question"],
+            //     "opcoes" => [
+            //         "peso_econ" => $pergunta["effect"]["econ"],
+            //         "peso_dipl" => $pergunta["effect"]["dipl"],
+            //         "peso_govt" => $pergunta["effect"]["govt"],
+            //         "peso_scty" => $pergunta["effect"]["scty"]
+            //     ],
+            // ]);
+
+            // array_push($perguntasInsert, ["texto" => $pergunta["question"]]);
         }
 
-        if (!Pergunta::exists()) {
-            Pergunta::insert($perguntasInsert);
-        }
-
-        if (Opcao::exists()) {
-            return; // both tables are seeded
-        }
-
-        $_perguntaPlucks = Pergunta::pluck('id', 'texto')->all(); 
-
-        $opcoesInsert = [];
         
-        foreach ($perguntasOpcoes as $perguntaOpcao) {
-            $_opcao = $perguntaOpcao['opcoes'];
-            $_opcao['pergunta_id'] = $_perguntaPlucks[$perguntaOpcao['texto']];
-            array_push($opcoesInsert, $_opcao);
-        }
 
-        Opcao::insert($opcoesInsert);
     }
 
     private function readPerguntasJson() {
