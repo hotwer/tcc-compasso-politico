@@ -35,6 +35,9 @@
        <br /> <br />
        Caso você tenha interesse em conhecer o projeto original, você pode encontra-lo no repositório GitHub
        <a href="https://github.com/8values/8values.github.io">https://github.com/8values/8values.github.io</a>
+       <br /> <br />
+       Parte dessas traduções foram baseadas em um outro projeto com o foco na tradução para português do projeto original, que tem como autoria o Rafael Arrais (raph) 
+       <a href="https://raph.com.br/8values/">https://raph.com.br/8values/</a>
     </p>
     <h2>O que é o 8values?</h2>
     <p>O 8values é, em essência, um teste de coordenadas políticas que tenta indicar porcentagens
