@@ -260,7 +260,7 @@
     },
     {
         "id": 27,
-        "question": "Governos deveriam prestas contas à comunidade internacional.",
+        "question": "Governos deveriam prestar contas à comunidade internacional.",
         "effect": {
             "econ": 0,
             "dipl": 10,
