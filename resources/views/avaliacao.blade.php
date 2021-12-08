@@ -9,7 +9,7 @@
         <h2 style="text-align:center;" id="question-number"></h2>
     </div>
     <p class="question" id="question-text">
-        Antes de apresentarmos o seu resultado, gostariamos de saber como você se sentiu durante a 
+        Antes de apresentarmos o seu resultado, gostariamos de saber como você se sentiu durante a pesquisa realizada, então seguiremos com algumas perguntas sobre a mesma.
     </p>
     
     <button id="proceed-button" class="button">Compreendi</button> <br>

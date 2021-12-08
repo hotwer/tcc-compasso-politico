@@ -26,7 +26,7 @@
     
     <hr>
     <h2>Importante!</h2>
-    <p>Esse é um projeto de pesquisa de TCC desenvolvido por <u><a href="https://www.linkedin.com/in/bernardo-araujo-7419a610a/">Bernardo Kauer Comba de Araujo</a></u> pela Universidade Univeritas do Rio de Janeiro, sob a orientação do professor Yuri Lima, com o objetivo 
+    <p>Esse é um projeto de pesquisa de TCC do curso de Ciências da Computação  desenvolvido por <u><a href="https://www.linkedin.com/in/bernardo-araujo-7419a610a/">Bernardo Kauer Comba de Araujo</a></u> pela Univeritas Rio de Janeiro, sob a orientação do professor Yuri Lima, com o objetivo 
        de realizar coleta de informações para trabalho de pesquisa sem fins comerciais.
        <br /> <br />
        Parte desse projeto é baseado no teste conhecido como <i>8values</i>. Foi modificado e traduzido para aderir aos formatos da pesquisa.
