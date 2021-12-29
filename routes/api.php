@@ -30,3 +30,7 @@ Route::get("/estado/{estadoId}/cidades", [EstadosCidadesController::class, 'cida
 Route::post("/resposta/save/{perguntaId}", [RespostasController::class, 'save']);
 Route::post("/avaliar/{avaliacaoItemNumber}", [RespostasController::class, 'avaliar']);
 
+// teste
+Route::get("/perfil-estado", [RespostasController::class, 'perfilEstado']);
+Route::get("/calcular-ideologias", [RespostasController::class, 'calcularIdeologias']);
+
